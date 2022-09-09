@@ -19,8 +19,18 @@
 
 <a href="https://www.youtube.com/JankariKiDuniya"><img src="https://img.shields.io/badge/Join-Subscribe%20Support-blue.svg?style=for-the-badge&logo=YouTube"></a>
 
-## Features ❤️”®
+## Requirment.
+- Api ID
+- Api Hash
+- Pyrogram Session
+<h4> ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ᴠɪᴀ ᴛᴇʟᴇɢʀᴀᴍ sᴛʀɪɴɢ-ɢᴇɴ ʙᴏᴛ: </h4>    
+<p><a href="https://t.me/Session_Generator_Robot"><img src="https://img.shields.io/badge/TG%20String%20Gen%20Bot-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a></p>
+    
 
+## Features ❤️®
+- ᴄʜᴀᴛʙᴏᴛ ʙᴀsᴇᴅ ᴏɴ ᴀɪ 
+- ʙᴀᴄᴋᴇɴᴅ ᴅᴀᴛᴀʙᴀsᴇ sʏsᴛᴇᴍ
+- ɴᴏ ʙᴏᴛ ᴛᴏᴋᴇɴ ʀᴇǫᴜɪʀᴇᴅ
 
 # Owner And Credit
 
