@@ -42,7 +42,7 @@
 ## sᴘᴇᴄɪᴀʟ ᴄʀᴇᴅɪᴛ
 
 - [ᴀsᴀᴅ ᴀʟɪ](https://t.me/Dr_Asad_Ali) ғᴏʀ ᴄᴏɴᴠᴇʀᴛɪɴɢ ɪɴᴛᴏ ᴜsᴇʀʙᴏᴛ.
-- MetaVoid (Moezilla) ғᴏʀ ᴍᴀɪɴ ᴘʀᴏᴊᴇᴄᴛ
+- [MetaVoid (Moezilla) ғᴏʀ ᴍᴀɪɴ ᴘʀᴏᴊᴇᴄᴛ](https://github.com/Moezilla)
 
 </details>
 
