@@ -22,7 +22,7 @@
 ## Requirment.
 - Api ID
 - Api Hash
-- Pyrogram Session
+- Pyrogram String Session
 <h4> ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ᴠɪᴀ ᴛᴇʟᴇɢʀᴀᴍ sᴛʀɪɴɢ-ɢᴇɴ ʙᴏᴛ: </h4>    
 <p><a href="https://t.me/Session_Generator_Robot"><img src="https://img.shields.io/badge/TG%20String%20Gen%20Bot-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a></p>
     
