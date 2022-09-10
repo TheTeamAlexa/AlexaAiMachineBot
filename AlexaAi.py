@@ -1,1 +1,17 @@
-𝐒𝐎𝐎𝐍 𝐏𝐔𝐁𝐋𝐈𝐂 𝐃𝐎𝐍'𝐓 𝐖𝐎𝐑𝐑𝐘
+# ©  - MetaVoid (Moezilla) And Alexa Team For Modification
+# Give Credit ❣️Day
+
+from pyrogram import Client, filters
+import asyncio
+from pyrogram.types import *
+from pymongo import MongoClient
+import requests
+import random
+from pyrogram.errors import (
+    PeerIdInvalid,
+    ChatWriteForbidden
+)
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
+from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
+import os
+import re
