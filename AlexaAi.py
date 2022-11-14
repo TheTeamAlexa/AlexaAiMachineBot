@@ -13,15 +13,16 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
-import os
+from os import getenv
 import re
+from dotenv import load_dotenv
 
+load_dotenv()
 
-API_ID = os.environ.get("API_ID", "") 
-API_HASH = os.environ.get("API_HASH", "") 
-SESSION_NAME = os.environ.get("SESSION_NAME", "")
-MONGO_URL = os.environ.get("MONGO_URL", "")
-
+API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH")
+SESSION_NAME = getenv("SESSION_NAME", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 client = Client(SESSION_NAME, API_ID, API_HASH)
 
