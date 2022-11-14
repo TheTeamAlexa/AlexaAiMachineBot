@@ -26,6 +26,14 @@
 <h4> ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ᴠɪᴀ ᴛᴇʟᴇɢʀᴀᴍ sᴛʀɪɴɢ-ɢᴇɴ ʙᴏᴛ: </h4>    
 <p><a href="https://t.me/Session_Generator_Robot"><img src="https://img.shields.io/badge/TG%20String%20Gen%20Bot-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a></p>
     
+## ✨ ʜᴏsᴛ ᴀɪ ᴏɴ ʜᴇʀᴏᴋᴜ✨
+
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/TheTeamAlexa/AlexaAiMachineBot"> <img src="https://img.shields.io/badge/ᴅᴇᴘʟᴏʏ%20ᴛᴏ%20ʜᴇʀᴏᴋᴜ-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
+## ✨ ʜᴏsᴛ ᴀɪ ᴏɴ sᴄᴀʟɪɴɢᴏ ғᴏʀ 30 ᴅᴀʏs ғʀᴇᴇ ᴡɪᴛʜ ᴜɴʟɪɴɪᴛᴛᴇᴅ ᴅʏɴᴏs✨
+
+<p align="center"><a href="https://auth.scalingo.com/users/auth/github"> <img src="https://img.shields.io/badge/ᴅᴇᴘʟᴏʏ%20ᴛᴏ%20sᴄᴀʟɪɴɢᴏ-black?style=for-the-badge&logo=scalingo" width="220" height="38.45"/></a></p>
+
 
 ## Features ❤️®
 - ᴄʜᴀᴛʙᴏᴛ ʙᴀsᴇᴅ ᴏɴ ᴀɪ 
