@@ -22,7 +22,7 @@ load_dotenv()
 API_ID = int(getenv("API_ID", ""))
 API_HASH = getenv("API_HASH")
 SESSION_NAME = getenv("SESSION_NAME", None)
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_URL", None)
 
 client = Client(SESSION_NAME, API_ID, API_HASH)
 
