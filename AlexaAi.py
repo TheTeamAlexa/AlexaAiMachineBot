@@ -69,7 +69,59 @@ IF HAVE ANY QUESTION THEN CONTACT » TO » MY » [OWNER] @Jankari_Ki_Duniya""",
     & ~filters.private)
 async def start(client, message):
     await message.reply_text(f"**ᴀʟᴇxᴀ ᴀɪ ᴜsᴇʀʙᴏᴛ ғᴏʀ ᴄʜᴀᴛᴛɪɴɢ ɪs ᴡᴏʀᴋɪɴɢ**")
+
+@client.on_message(
+    filters.command("chatbot off", prefixes=["/", ".", "?", "-"])
+    & ~filters.private)
+async def chatbotofd(client, message):
+    alexadb = MongoClient(MONGO_URL)    
+    alexa = alexadb["AlexaDb"]["Alexa"]     
+    if message.from_user:
+        user = message.from_user.id
+        chat_id = message.chat.id
+        if user not in (
+           await is_admins(chat_id)
+        ):
+           return await message.reply_text(
+                ""
+            )
+    is_alexa = alexa.find_one({"chat_id": message.chat.id})
+    if not is_alexa:
+        alexa.insert_one({"chat_id": message.chat.id})
+        await message.reply_text(f"ᴄʜᴀᴛʙɪᴛ ɪs ᴅɪsᴀʙʟᴇᴅ ʙʏ {message.from_user.mention()} ғᴏʀ ᴜsᴇʀs ɪɴ {message.chat.title}")
+    if is_alexa:
+        await message.reply_text(f"ᴄʜᴀᴛʙɪᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴅɪsᴀʙʟᴇᴅ")
     
+
+@client.on_message(
+    filters.command("chatbot on", prefixes=["/", ".", "?", "-"])
+    & ~filters.private)
+async def chatboton(client, message):
+    alexadb = MongoClient(MONGO_URL)    
+    alexa = alexadb["AlexaDb"]["Alexa"]     
+    if message.from_user:
+        user = message.from_user.id
+        chat_id = message.chat.id
+        if user not in (
+            await is_admins(chat_id)
+        ):
+            return await message.reply_text(
+                "ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ"
+            )
+    is_alexa = alexa.find_one({"chat_id": message.chat.id})
+    if not is_alexa:           
+        await message.reply_text(f"ᴄʜᴀᴛʙɪᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴇɴᴀʙʟᴇᴅ")
+    if is_alexa:
+        alexa.delete_one({"chat_id": message.chat.id})
+        await message.reply_text(f"ᴄʜᴀᴛʙɪᴛ ɪs ᴇɴᴀʙʟᴇᴅ ʙʏ {message.from_user.mention()} ғᴏʀ ᴜsᴇʀs ɪɴ {message.chat.title}")
+    
+
+@client.on_message(
+    filters.command("chatbot", prefixes=["/", ".", "?", "-"])
+    & ~filters.private)
+async def chatbot(client, message):
+    await message.reply_text(f"**ᴜsᴇᴀɢᴇ:**\n/chatbot [on|off] ᴏɴʟʏ ɢʀᴏᴜᴘ")
+
     
 @client.on_message(
  (
