@@ -26,6 +26,13 @@ MONGO_URL = getenv("MONGO_URL", None)
 
 client = Client(SESSION_NAME, API_ID, API_HASH)
 
+async def is_admins(chat_id: int):
+    return [
+        member.user.id
+        async for member in bot.iter_chat_members(
+            chat_id, filter="administrators"
+        )
+    ]
 
 @client.on_message(
     filters.command("repo", prefixes=["/", ".", "?", "-"])
